@@ -1,0 +1,17 @@
+Age,Income,TimeSpent,VisitCount,ClickThrough,Segment,DeviceType,Region,Purchase
+25,45000,120,5,0.15,Standard,Mobile,North,0
+34,62000,240,12,0.35,Premium,Desktop,South,1
+28,51000,180,8,0.25,Standard,Mobile,East,1
+45,85000,300,20,0.50,Premium,Desktop,West,1
+22,38000,60,3,0.08,Standard,Mobile,North,0
+38,72000,250,15,0.40,Premium,Desktop,South,1
+29,55000,200,10,0.30,Standard,Tablet,East,1
+41,78000,280,18,0.45,Premium,Desktop,West,1
+24,42000,90,4,0.12,Standard,Mobile,North,0
+36,68000,220,14,0.38,Premium,Desktop,South,1
+26,48000,150,7,0.20,Standard,Tablet,East,0
+43,81000,290,19,0.48,Premium,Desktop,West,1
+23,40000,70,2,0.10,Standard,Mobile,North,0
+35,65000,210,12,0.35,Premium,Desktop,South,1
+27,50000,170,9,0.28,Standard,Mobile,East,1
+40,76000,270,17,0.42,Premium,Desktop,West,1
