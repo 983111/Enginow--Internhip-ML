@@ -1,0 +1,93 @@
+{
+  "best_model_name": "Logistic Regression",
+  "numerical_cols": [
+    "SeniorCitizen",
+    "tenure",
+    "MonthlyCharges",
+    "TotalCharges",
+    "AvgMonthlySpend",
+    "NumAddOnServices",
+    "HasInternet",
+    "IsNewCustomer"
+  ],
+  "categorical_cols": [
+    "gender",
+    "Partner",
+    "Dependents",
+    "PhoneService",
+    "MultipleLines",
+    "InternetService",
+    "OnlineSecurity",
+    "OnlineBackup",
+    "DeviceProtection",
+    "TechSupport",
+    "StreamingTV",
+    "StreamingMovies",
+    "Contract",
+    "PaperlessBilling",
+    "PaymentMethod",
+    "TenureGroup"
+  ],
+  "feature_names": [
+    "SeniorCitizen",
+    "tenure",
+    "MonthlyCharges",
+    "TotalCharges",
+    "AvgMonthlySpend",
+    "NumAddOnServices",
+    "HasInternet",
+    "IsNewCustomer",
+    "gender_Male",
+    "Partner_Yes",
+    "Dependents_Yes",
+    "PhoneService_Yes",
+    "MultipleLines_No phone service",
+    "MultipleLines_Yes",
+    "InternetService_Fiber optic",
+    "InternetService_No",
+    "OnlineSecurity_No internet service",
+    "OnlineSecurity_Yes",
+    "OnlineBackup_No internet service",
+    "OnlineBackup_Yes",
+    "DeviceProtection_No internet service",
+    "DeviceProtection_Yes",
+    "TechSupport_No internet service",
+    "TechSupport_Yes",
+    "StreamingTV_No internet service",
+    "StreamingTV_Yes",
+    "StreamingMovies_No internet service",
+    "StreamingMovies_Yes",
+    "Contract_One year",
+    "Contract_Two year",
+    "PaperlessBilling_Yes",
+    "PaymentMethod_Credit card (automatic)",
+    "PaymentMethod_Electronic check",
+    "PaymentMethod_Mailed check",
+    "TenureGroup_1-2 yr",
+    "TenureGroup_2-4 yr",
+    "TenureGroup_4+ yr"
+  ],
+  "results": {
+    "Logistic Regression": {
+      "Accuracy": 0.7423704755145494,
+      "Precision": 0.5094664371772806,
+      "Recall": 0.7914438502673797,
+      "F1 Score": 0.6198952879581152,
+      "ROC-AUC": 0.8436177633108579
+    },
+    "Random Forest": {
+      "Accuracy": 0.7771469127040455,
+      "Precision": 0.5815217391304348,
+      "Recall": 0.5721925133689839,
+      "F1 Score": 0.5768194070080862,
+      "ROC-AUC": 0.8260417473972461
+    },
+    "XGBoost": {
+      "Accuracy": 0.7764371894960965,
+      "Precision": 0.5835694050991501,
+      "Recall": 0.5508021390374331,
+      "F1 Score": 0.5667125171939478,
+      "ROC-AUC": 0.8286922937818078
+    }
+  }
+}
