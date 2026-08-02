@@ -1,4 +1,4 @@
-# 📉 Customer Churn Prediction & Retention Analysis System
+#  Customer Churn Prediction & Retention Analysis System
 
 An end-to-end machine learning system that predicts which telecom customers are likely to churn, explains **why** using SHAP, and translates the results into actionable retention strategy — deployed as an interactive Streamlit web app.
 
@@ -6,7 +6,7 @@ An end-to-end machine learning system that predicts which telecom customers are 
 
 ---
 
-## 🧭 Table of Contents
+## Table of Contents
 
 - [Project Overview](#-project-overview)
 - [Business Problem](#-business-problem)
@@ -25,7 +25,7 @@ An end-to-end machine learning system that predicts which telecom customers are 
 
 ---
 
-## 📖 Project Overview
+##  Project Overview
 
 Customer churn — when a customer stops doing business with a company — is one of the most expensive problems in subscription-based industries like telecom, SaaS, and streaming. This project builds a complete machine learning pipeline that:
 
@@ -36,7 +36,7 @@ Customer churn — when a customer stops doing business with a company — is on
 
 ---
 
-## 💼 Business Problem
+##  Business Problem
 
 Acquiring a new customer costs **5–7x more** than retaining an existing one. A telecom provider with a ~27% annual churn rate is effectively rebuilding a quarter of its customer base every year. The business questions this project answers:
 
@@ -48,21 +48,21 @@ The model is optimized to **minimize missed churners (false negatives)**, since 
 
 ---
 
-## ✨ Features
+##  Features
 
-- 🔍 **Exploratory Data Analysis** — class distribution, correlation analysis, contract-vs-churn breakdown, charge distributions
-- 🧹 **Robust data cleaning** — type coercion, missing value handling, whitespace normalization
-- 🛠️ **Feature engineering** — tenure buckets, add-on service counts, average monthly spend, new-customer flag
-- ⚖️ **Class imbalance handling** — SMOTE oversampling applied correctly (training data only)
-- 🤖 **Three-model comparison** — Logistic Regression, Random Forest, XGBoost, each hyperparameter-tuned
-- 📊 **Full evaluation suite** — Accuracy, Precision, Recall, F1, ROC-AUC, Confusion Matrix
-- 🧠 **Explainable AI** — global feature importance + SHAP summary plots
-- 🌐 **Interactive Streamlit app** — real-time predictions, risk gauge, feature importance, professional UI
-- 📁 **Clean, modular, reusable code** — scikit-learn `Pipeline`/`ColumnTransformer`, no leakage, no duplication
+-  **Exploratory Data Analysis** — class distribution, correlation analysis, contract-vs-churn breakdown, charge distributions
+-  **Robust data cleaning** — type coercion, missing value handling, whitespace normalization
+-  **Feature engineering** — tenure buckets, add-on service counts, average monthly spend, new-customer flag
+-  **Class imbalance handling** — SMOTE oversampling applied correctly (training data only)
+-  **Three-model comparison** — Logistic Regression, Random Forest, XGBoost, each hyperparameter-tuned
+-  **Full evaluation suite** — Accuracy, Precision, Recall, F1, ROC-AUC, Confusion Matrix
+-  **Explainable AI** — global feature importance + SHAP summary plots
+-  **Interactive Streamlit app** — real-time predictions, risk gauge, feature importance, professional UI
+-  **Clean, modular, reusable code** — scikit-learn `Pipeline`/`ColumnTransformer`, no leakage, no duplication
 
 ---
 
-## 📊 Dataset
+##  Dataset
 
 **Source:** [IBM Telco Customer Churn Dataset](https://raw.githubusercontent.com/IBM/telco-customer-churn-on-icp4d/master/data/Telco-Customer-Churn.csv) (also widely mirrored on [Kaggle](https://www.kaggle.com/datasets/blastchar/telco-customer-churn))
 
@@ -121,7 +121,7 @@ The model is optimized to **minimize missed churners (false negatives)**, since 
 
 ---
 
-## 🔄 Project Workflow
+##  Project Workflow
 
 ```
 Business Understanding
@@ -177,7 +177,7 @@ Deployment (Streamlit App) + Business Recommendations
 
 ---
 
-## 📂 Repository Structure
+##  Repository Structure
 
 ```
 customer-churn-prediction/
@@ -204,7 +204,7 @@ customer-churn-prediction/
 
 ---
 
-## ⚙️ Installation
+##  Installation
 
 ```bash
 # 1. Clone the repository
@@ -221,7 +221,7 @@ pip install -r requirements.txt
 
 ---
 
-## ▶️ How to Run
+##  How to Run
 
 ### Option A — Explore the analysis (Notebook)
 
@@ -261,13 +261,13 @@ Then open the URL shown in your terminal (typically `http://localhost:8501`). Fi
 
 ---
 
-## 📈 Results
+## Results
 
 Three models were trained, hyperparameter-tuned with `RandomizedSearchCV` (5-fold stratified CV, `roc_auc` scoring), and evaluated on a held-out, real-world-distributed test set (20% of the data, stratified):
 
 | Model | Accuracy | Precision | Recall | F1 Score | ROC-AUC |
 |---|---|---|---|---|---|
-| **Logistic Regression** ⭐ | 0.743 | 0.510 | **0.791** | 0.621 | **0.843** |
+| **Logistic Regression**  | 0.743 | 0.510 | **0.791** | 0.621 | **0.843** |
 | XGBoost | 0.784 | 0.592 | 0.602 | 0.597 | 0.842 |
 | Random Forest | 0.779 | 0.583 | 0.583 | 0.583 | 0.825 |
 
@@ -285,18 +285,8 @@ Three models were trained, hyperparameter-tuned with `RandomizedSearchCV` (5-fol
 
 ---
 
-## 💡 Business Recommendations
 
-1. **Target month-to-month customers first** — they churn at 3–4x the rate of annual-contract customers. Incentivize conversion to 1-year contracts.
-2. **Focus retention efforts on the first 3 months of tenure** — the highest-risk window for new customers.
-3. **Investigate the high-monthly-charge churn signal** — consider loyalty discounts or bundle reviews for high-paying at-risk customers.
-4. **Promote service bundles over à la carte add-ons** — customers with more add-ons are measurably stickier.
-5. **Operationalize with risk tiers, not binary flags** — use the app's Low/Medium/High risk segmentation to prioritize limited retention capacity.
-6. **Monitor and retrain quarterly** — churn drivers shift with pricing, competition, and macro conditions.
-
----
-
-## 🚀 Future Improvements
+##  Future Improvements
 
 - [ ] Add a **model monitoring dashboard** to track prediction drift and retraining triggers over time
 - [ ] Incorporate **customer lifetime value (CLV)** to prioritize retention spend by expected revenue impact, not just churn probability
@@ -308,7 +298,7 @@ Three models were trained, hyperparameter-tuned with `RandomizedSearchCV` (5-fol
 
 ---
 
-## ☁️ Deployment Instructions
+##  Deployment Instructions
 
 ### Deploy to Streamlit Community Cloud (free)
 
